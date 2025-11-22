@@ -7,7 +7,6 @@ export default function RedirectPage() {
 
     useEffect(() => {
         if (code) {
-            // Redirect directly to backend redirect URL
             window.location.href = `http://localhost:4000/${code}`;
         }
     }, [code]);
